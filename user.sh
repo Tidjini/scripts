@@ -32,4 +32,3 @@ create_user(){
 
 echo 'testing ...'
 create_user
-
