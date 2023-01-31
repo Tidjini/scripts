@@ -7,6 +7,7 @@ PROJECT=$2
 create_project_logger(){
     echo "LOG FOLDER CREATION"
     echo $PASSWORD | sudo -S -k mkdir /var/log/$PROJECT
+    echo '***********'
 }
 
 echo 'testing ...'
