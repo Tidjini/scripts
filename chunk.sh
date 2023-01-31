@@ -1,15 +1,3 @@
-PASSWORD=$1
-PROJECT=$2
-
-create_project_logger(){
-    echo "LOG FOLDER CREATION"
-    echo $PASSWORD | sudo -S -k mkdir /var/log/$PROJECT
-}
-
-echo 'testing ...'
-create_project_logger
-
-
 # default logs path /home/project_name/.logs
 # USER -> BLOCANTE -> REPORT AND STOP PROCESSING
 # check if the user exist
