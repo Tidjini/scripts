@@ -1,3 +1,21 @@
+PASSWORD=$1
+# ##########UPDATE AND UPGRADE (1)###################
+update_and_upgrade(){
+    pass_show="**********"
+    echo "UPDATING AND UPGRADING..."
+    echo "UPDATE..."
+    echo $PASSWORD | sudo -S -k apt-get -y update
+    echo $pass_show
+    echo "UPGRADE..."
+    echo $PASSWORD | sudo -S -k apt-get -y upgrade
+    echo $pass_show
+    echo "UPDATE AND UPGRADE FINISH"
+}
+echo 'testing ...'
+update_and_upgrade
+# ##########UPDATE AND UPGRADE###################
+
+
 # default logs path /home/project_name/.logs
 # USER -> BLOCANTE -> REPORT AND STOP PROCESSING
 # check if the user exist
@@ -50,17 +68,7 @@
 # ########## SWITCH TO ROOT ##############
 
 
-# ##########UPDATE AND UPGRADE (1)###################
-# # echo "UPDATING AND UPGRADING..."
-# # echo "UPDATE..."
-# # echo $password | sudo -S -k apt-get -y update 2>tmperr
-# # execute error function
-# # echo $pass_show
-# # echo "UPGRADE..."
-# # echo $password | sudo -S -k apt-get -y upgrade
-# # echo $pass_show
-# # echo "UPDATE AND UPGRADE FINISH"
-# ##########UPDATE AND UPGRADE###################
+
 
 # ##########SET A HOSTNAME###################
 # # echo "SET HOSTNAME..."
