@@ -3,9 +3,6 @@
 # check if the user exist
 # otherwise create the user with password and grant the user with sudo
 
-# CREATE LOG FOLDER (DIR) oherwise use /home/.logs/project_name/ 
-# echo $password | sudo -S -k mkdir /home/$user/.logs/project_name/ 
-
 # remember to log issues in file [errors] and logs
 # function to store errors (stderr):
 #   - for each commande add in the end  2>tmperr to capture stderr
