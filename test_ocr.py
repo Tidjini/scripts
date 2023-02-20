@@ -54,30 +54,52 @@ def remove_noise(image):
     return 255 - opening
 
 
-image = get_image('pic1.jpg')
-# image = apply_zoom(ORIGINAL, 1)
-# for i in range(1000):
-image = remove_noise(image)
+image = get_image('pic.jpg')
+
+
+sr = cv2.dnn_superres.DnnSuperResImpl_create()
+
+path = "EDSR_x4.pb"
+
+sr.readModel(path)
+
+sr.setModel("edsr", 4)
+
+image = sr.upsample(image)
+
+# Resized image
+# image = cv2.resize(image, dsize=None, fx=4, fy=4)
+
+
+# image = apply_zoom(image, 3)
+# image = cv2.convertScaleAbs(image, alpha=1.5, beta=5)
+image = cv2.addWeighted(image, 2, image, 0, -200)
 # image = threshold(image)
+image = remove_noise(image)
+# image = cv2.addWeighted(image, 2, image, 0, -200)
+# image = remove_noise(image)
+# image = threshold(image)
+
+
+# for i in range(1000):
+
 cv2.imshow("Resized_Window", image)
 cv2.waitKey()
 # image = apply_zoom(image, 1)
 # image = threshold(image)
 # for i in range(500):
 #     image = remove_noise(image)
-cv2.imwrite('pic1.traited.jpg', image)
+cv2.imwrite('pic2.traited.jpg', image)
 
 
-p2t = Pix2Text(analyzer_config=dict(model_name='layout'))
-# 也可以使用 `p2t.recognize(img_fp)` 获得相同的结果
-outs = p2t('pic1.traited.jpg', resized_shape=600)
-# print(outs)
-# 如果只需要识别出的文字和Latex表示，可以使用下面行的代码合并所有结果
-only_text = '\n'.join([out['text'] for out in outs])
-print("Pix 2 Text")
-print(only_text)
-
-
+# p2t = Pix2Text(analyzer_config=dict(model_name='layout'))
+# # 也可以使用 `p2t.recognize(img_fp)` 获得相同的结果
+# outs = p2t('pic.traited.jpg', resized_shape=600)
+# # print(outs)
+# # 如果只需要识别出的文字和Latex表示，可以使用下面行的代码合并所有结果
+# only_text = '\n'.join([out['text'] for out in outs])
+# print("Pix 2 Text")
+# print(only_text)
 data = pytesseract.image_to_string(image)
 print("pytesseract")
 print(data)
