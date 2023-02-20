@@ -1,0 +1,350 @@
+
+
+
+<form action="/Global-Appointment/Applicant/AddApplicant" autocomplete="off" id="AddApplicantFormID" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="xaqd32Wx2sAnSfZ6kJdkElWxvhdEfWJdl5QRDrh_IiHhwtbKiSxYN55WJ1fPD3ph4_EhmX6iaaR6QrmquiG5cdlPv_pQy0Rf50RNYj3CO_ZS1BAg0"><input data-val="true" data-val-required="The IsVAFValidationEnabled field is required." id="IsVAFValidationEnabled" name="IsVAFValidationEnabled" type="hidden" value="False"><input data-val="true" data-val-required="The IsEndorsedChildEnabled field is required." id="IsEndorsedChildEnabled" name="IsEndorsedChildEnabled" type="hidden" value="False"><input data-val="true" data-val-number="The field NoOfEndorsedChild must be a number." data-val-required="The NoOfEndorsedChild field is required." id="NoOfEndorsedChild" name="NoOfEndorsedChild" type="hidden" value="0"><input data-val="true" data-val-required="The IsEndorsedChild field is required." id="IsEndorsedChild" name="IsEndorsedChild" type="hidden" value="False"><input data-val="true" data-val-required="The EnableValidatePaymentAtCashCounter field is required." id="EnableValidatePaymentAtCashCounter" name="EnableValidatePaymentAtCashCounter" type="hidden" value="False"><input id="Currency" name="Currency" type="hidden" value=""><input data-val="true" data-val-number="The field Amount must be a number." data-val-required="The Amount field is required." id="Amount" name="Amount" type="hidden" value="0"><input data-val="true" data-val-required="The IsAppointmentExists field is required." id="IsAppointmentExists" name="IsAppointmentExists" type="hidden" value="False"><input data-val="true" data-val-number="The field CancellationCount must be a number." data-val-required="The CancellationCount field is required." id="CancellationCount" name="CancellationCount" type="hidden" value="0"><input data-val="true" data-val-number="The field MissionId must be a number." data-val-required="The MissionId field is required." id="MissionId" name="MissionId" type="hidden" value="0"><input data-val="true" data-val-number="The field CountryId must be a number." data-val-required="The CountryId field is required." id="CountryId" name="CountryId" type="hidden" value="0"><input data-val="true" data-val-required="The ShowNextAvailableSlot field is required." id="ShowNextAvailableSlot" name="ShowNextAvailableSlot" type="hidden" value="False"><input data-val="true" data-val-required="The ShowLegalizationDocuments field is required." id="ShowLegalizationDocuments" name="ShowLegalizationDocuments" type="hidden" value="False"><input data-val="true" data-val-required="The IsEndrosedChildDisclaimerEnabled field is required." id="IsEndrosedChildDisclaimerEnabled" name="IsEndrosedChildDisclaimerEnabled" type="hidden" value="True"><input data-val="true" data-val-number="The field EndrosedChildAge must be a number." data-val-required="The EndrosedChildAge field is required." id="EndrosedChildAge" name="EndrosedChildAge" type="hidden" value="-1"><input data-val="true" data-val-required="The IsApplicantCompanyInfoRequired field is required." id="IsApplicantCompanyInfoRequired" name="IsApplicantCompanyInfoRequired" type="hidden" value="False"><input id="StateJsonString" name="StateJsonString" type="hidden" value="[{&quot;stateId&quot;:0,&quot;Municipalities&quot;:null,&quot;Pincodes&quot;:null,&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Province&quot;},{&quot;stateId&quot;:1,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:1,&quot;Name&quot;:&quot;Bear&quot;},{&quot;Id&quot;:2,&quot;Name&quot;:&quot;Brookside&quot;},{&quot;Id&quot;:3,&quot;Name&quot;:&quot;Dover&quot;},{&quot;Id&quot;:4,&quot;Name&quot;:&quot;Glasgow&quot;},{&quot;Id&quot;:5,&quot;Name&quot;:&quot;Hockessin&quot;},{&quot;Id&quot;:6,&quot;Name&quot;:&quot;Middletown&quot;},{&quot;Id&quot;:7,&quot;Name&quot;:&quot;Milford&quot;},{&quot;Id&quot;:8,&quot;Name&quot;:&quot;Newark&quot;},{&quot;Id&quot;:9,&quot;Name&quot;:&quot;Pike Creek Valley&quot;},{&quot;Id&quot;:10,&quot;Name&quot;:&quot;Smyrna&quot;},{&quot;Id&quot;:11,&quot;Name&quot;:&quot;Wilmington&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:2,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:12,&quot;Name&quot;:&quot;Annapolis&quot;},{&quot;Id&quot;:13,&quot;Name&quot;:&quot;Arbutus&quot;},{&quot;Id&quot;:14,&quot;Name&quot;:&quot;Arnold&quot;},{&quot;Id&quot;:15,&quot;Name&quot;:&quot;Aspen Hill&quot;},{&quot;Id&quot;:16,&quot;Name&quot;:&quot;Baltimore&quot;},{&quot;Id&quot;:17,&quot;Name&quot;:&quot;Bel Air North&quot;},{&quot;Id&quot;:18,&quot;Name&quot;:&quot;Bel Air South&quot;},{&quot;Id&quot;:19,&quot;Name&quot;:&quot;Bethesda&quot;},{&quot;Id&quot;:20,&quot;Name&quot;:&quot;Bowie&quot;},{&quot;Id&quot;:21,&quot;Name&quot;:&quot;Carney&quot;},{&quot;Id&quot;:22,&quot;Name&quot;:&quot;Catonsville&quot;},{&quot;Id&quot;:23,&quot;Name&quot;:&quot;Chillum&quot;},{&quot;Id&quot;:24,&quot;Name&quot;:&quot;Clinton&quot;},{&quot;Id&quot;:25,&quot;Name&quot;:&quot;Cockeysville&quot;},{&quot;Id&quot;:26,&quot;Name&quot;:&quot;College Park&quot;},{&quot;Id&quot;:27,&quot;Name&quot;:&quot;Columbia&quot;},{&quot;Id&quot;:28,&quot;Name&quot;:&quot;Crofton&quot;},{&quot;Id&quot;:29,&quot;Name&quot;:&quot;Cumberland&quot;},{&quot;Id&quot;:30,&quot;Name&quot;:&quot;Dundalk&quot;},{&quot;Id&quot;:31,&quot;Name&quot;:&quot;Edgewood&quot;},{&quot;Id&quot;:32,&quot;Name&quot;:&quot;Eldersburg&quot;},{&quot;Id&quot;:33,&quot;Name&quot;:&quot;Ellicott City&quot;},{&quot;Id&quot;:34,&quot;Name&quot;:&quot;Essex&quot;},{&quot;Id&quot;:35,&quot;Name&quot;:&quot;Fairland&quot;},{&quot;Id&quot;:36,&quot;Name&quot;:&quot;Fort Washington&quot;},{&quot;Id&quot;:37,&quot;Name&quot;:&quot;Frederick&quot;},{&quot;Id&quot;:38,&quot;Name&quot;:&quot;Gaithersburg&quot;},{&quot;Id&quot;:39,&quot;Name&quot;:&quot;Germantown&quot;},{&quot;Id&quot;:40,&quot;Name&quot;:&quot;Glen Burnie&nbsp;(incl. South Gate)&quot;},{&quot;Id&quot;:41,&quot;Name&quot;:&quot;Greenbelt&quot;},{&quot;Id&quot;:42,&quot;Name&quot;:&quot;Hagerstown&quot;},{&quot;Id&quot;:43,&quot;Name&quot;:&quot;Ilchester&quot;},{&quot;Id&quot;:44,&quot;Name&quot;:&quot;Landover&quot;},{&quot;Id&quot;:45,&quot;Name&quot;:&quot;Laurel&quot;},{&quot;Id&quot;:46,&quot;Name&quot;:&quot;Lochearn&quot;},{&quot;Id&quot;:47,&quot;Name&quot;:&quot;Middle River&quot;},{&quot;Id&quot;:48,&quot;Name&quot;:&quot;Milford Mill&quot;},{&quot;Id&quot;:49,&quot;Name&quot;:&quot;Montgomery Village&quot;},{&quot;Id&quot;:50,&quot;Name&quot;:&quot;North Bethesda&quot;},{&quot;Id&quot;:51,&quot;Name&quot;:&quot;North Potomac&quot;},{&quot;Id&quot;:52,&quot;Name&quot;:&quot;Odenton&quot;},{&quot;Id&quot;:53,&quot;Name&quot;:&quot;Olney&quot;},{&quot;Id&quot;:54,&quot;Name&quot;:&quot;Owings Mills&quot;},{&quot;Id&quot;:55,&quot;Name&quot;:&quot;Parkville&quot;},{&quot;Id&quot;:56,&quot;Name&quot;:&quot;Pasadena&quot;},{&quot;Id&quot;:57,&quot;Name&quot;:&quot;Perry Hall&quot;},{&quot;Id&quot;:58,&quot;Name&quot;:&quot;Pikesville&quot;},{&quot;Id&quot;:59,&quot;Name&quot;:&quot;Potomac&quot;},{&quot;Id&quot;:60,&quot;Name&quot;:&quot;Randallstown&quot;},{&quot;Id&quot;:61,&quot;Name&quot;:&quot;Reisterstown&quot;},{&quot;Id&quot;:62,&quot;Name&quot;:&quot;Rockville&quot;},{&quot;Id&quot;:63,&quot;Name&quot;:&quot;Salisbury&quot;},{&quot;Id&quot;:64,&quot;Name&quot;:&quot;Scaggsville&quot;},{&quot;Id&quot;:65,&quot;Name&quot;:&quot;Severn&quot;},{&quot;Id&quot;:66,&quot;Name&quot;:&quot;Severna Park&quot;},{&quot;Id&quot;:67,&quot;Name&quot;:&quot;Silver Spring&quot;},{&quot;Id&quot;:68,&quot;Name&quot;:&quot;South Laurel&quot;},{&quot;Id&quot;:69,&quot;Name&quot;:&quot;Suitland&quot;},{&quot;Id&quot;:70,&quot;Name&quot;:&quot;Towson&quot;},{&quot;Id&quot;:71,&quot;Name&quot;:&quot;Waldorf&nbsp;(incl. St. Charles)&quot;},{&quot;Id&quot;:72,&quot;Name&quot;:&quot;Wheaton&quot;},{&quot;Id&quot;:73,&quot;Name&quot;:&quot;Woodlawn&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:3,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:74,&quot;Name&quot;:&quot;Atlantic City&quot;},{&quot;Id&quot;:75,&quot;Name&quot;:&quot;Bayonne&quot;},{&quot;Id&quot;:76,&quot;Name&quot;:&quot;Bergenfield&quot;},{&quot;Id&quot;:77,&quot;Name&quot;:&quot;Brick Township&quot;},{&quot;Id&quot;:78,&quot;Name&quot;:&quot;Bridgeton&quot;},{&quot;Id&quot;:79,&quot;Name&quot;:&quot;Camden&quot;},{&quot;Id&quot;:80,&quot;Name&quot;:&quot;Carteret&quot;},{&quot;Id&quot;:81,&quot;Name&quot;:&quot;Cliffside Park&quot;},{&quot;Id&quot;:82,&quot;Name&quot;:&quot;Clifton&quot;},{&quot;Id&quot;:83,&quot;Name&quot;:&quot;Cranford&quot;},{&quot;Id&quot;:84,&quot;Name&quot;:&quot;East Brunswick&quot;},{&quot;Id&quot;:85,&quot;Name&quot;:&quot;East Orange&quot;},{&quot;Id&quot;:86,&quot;Name&quot;:&quot;Edison&quot;},{&quot;Id&quot;:87,&quot;Name&quot;:&quot;Elizabeth&quot;},{&quot;Id&quot;:88,&quot;Name&quot;:&quot;Elmwood Park&quot;},{&quot;Id&quot;:89,&quot;Name&quot;:&quot;Englewood&quot;},{&quot;Id&quot;:90,&quot;Name&quot;:&quot;Ewing&quot;},{&quot;Id&quot;:91,&quot;Name&quot;:&quot;Fair Lawn&quot;},{&quot;Id&quot;:92,&quot;Name&quot;:&quot;Fort Lee&quot;},{&quot;Id&quot;:93,&quot;Name&quot;:&quot;Garfield&quot;},{&quot;Id&quot;:94,&quot;Name&quot;:&quot;Glassboro&quot;},{&quot;Id&quot;:95,&quot;Name&quot;:&quot;Hackensack&quot;},{&quot;Id&quot;:96,&quot;Name&quot;:&quot;Hillside&quot;},{&quot;Id&quot;:97,&quot;Name&quot;:&quot;Hoboken&quot;},{&quot;Id&quot;:98,&quot;Name&quot;:&quot;Irvington&quot;},{&quot;Id&quot;:99,&quot;Name&quot;:&quot;Jersey City&quot;},{&quot;Id&quot;:100,&quot;Name&quot;:&quot;Kearny&quot;},{&quot;Id&quot;:101,&quot;Name&quot;:&quot;Lakewood&quot;},{&quot;Id&quot;:102,&quot;Name&quot;:&quot;Linden&quot;},{&quot;Id&quot;:103,&quot;Name&quot;:&quot;Livingston&quot;},{&quot;Id&quot;:104,&quot;Name&quot;:&quot;Lodi&quot;},{&quot;Id&quot;:105,&quot;Name&quot;:&quot;Long Branch&quot;},{&quot;Id&quot;:106,&quot;Name&quot;:&quot;Lyndhurst&quot;},{&quot;Id&quot;:107,&quot;Name&quot;:&quot;Maplewood&quot;},{&quot;Id&quot;:108,&quot;Name&quot;:&quot;Millville&quot;},{&quot;Id&quot;:109,&quot;Name&quot;:&quot;Newark&quot;},{&quot;Id&quot;:110,&quot;Name&quot;:&quot;New Brunswick&quot;},{&quot;Id&quot;:111,&quot;Name&quot;:&quot;North Bergen Township&quot;},{&quot;Id&quot;:112,&quot;Name&quot;:&quot;North Brunswick Township&quot;},{&quot;Id&quot;:113,&quot;Name&quot;:&quot;North Plainfield&quot;},{&quot;Id&quot;:114,&quot;Name&quot;:&quot;Nutley&quot;},{&quot;Id&quot;:115,&quot;Name&quot;:&quot;Old Bridge&quot;},{&quot;Id&quot;:116,&quot;Name&quot;:&quot;Orange&nbsp;(City of Orange)&quot;},{&quot;Id&quot;:117,&quot;Name&quot;:&quot;Palisades Park&quot;},{&quot;Id&quot;:118,&quot;Name&quot;:&quot;Paramus&quot;},{&quot;Id&quot;:119,&quot;Name&quot;:&quot;Parsippany-Troy Hills Township&quot;},{&quot;Id&quot;:120,&quot;Name&quot;:&quot;Passaic&quot;},{&quot;Id&quot;:121,&quot;Name&quot;:&quot;Paterson&quot;},{&quot;Id&quot;:122,&quot;Name&quot;:&quot;Pennsauken&quot;},{&quot;Id&quot;:123,&quot;Name&quot;:&quot;Perth Amboy&quot;},{&quot;Id&quot;:124,&quot;Name&quot;:&quot;Plainfield&quot;},{&quot;Id&quot;:125,&quot;Name&quot;:&quot;Pleasantville&quot;},{&quot;Id&quot;:126,&quot;Name&quot;:&quot;Princeton&quot;},{&quot;Id&quot;:127,&quot;Name&quot;:&quot;Rahway&quot;},{&quot;Id&quot;:128,&quot;Name&quot;:&quot;Ridgewood&quot;},{&quot;Id&quot;:129,&quot;Name&quot;:&quot;Roselle&quot;},{&quot;Id&quot;:130,&quot;Name&quot;:&quot;Sayreville&quot;},{&quot;Id&quot;:131,&quot;Name&quot;:&quot;Scotch Plains&quot;},{&quot;Id&quot;:132,&quot;Name&quot;:&quot;Secaucus&quot;},{&quot;Id&quot;:133,&quot;Name&quot;:&quot;Somerset&quot;},{&quot;Id&quot;:134,&quot;Name&quot;:&quot;South Plainfield&quot;},{&quot;Id&quot;:135,&quot;Name&quot;:&quot;Summit&quot;},{&quot;Id&quot;:136,&quot;Name&quot;:&quot;Teaneck&quot;},{&quot;Id&quot;:137,&quot;Name&quot;:&quot;Toms River&quot;},{&quot;Id&quot;:138,&quot;Name&quot;:&quot;Trenton&quot;},{&quot;Id&quot;:139,&quot;Name&quot;:&quot;Union&quot;},{&quot;Id&quot;:140,&quot;Name&quot;:&quot;Union City&quot;},{&quot;Id&quot;:141,&quot;Name&quot;:&quot;Vineland&quot;},{&quot;Id&quot;:142,&quot;Name&quot;:&quot;Wayne&quot;},{&quot;Id&quot;:143,&quot;Name&quot;:&quot;Westfield&quot;},{&quot;Id&quot;:144,&quot;Name&quot;:&quot;West Milford&quot;},{&quot;Id&quot;:145,&quot;Name&quot;:&quot;West New York&quot;},{&quot;Id&quot;:146,&quot;Name&quot;:&quot;West Orange&quot;},{&quot;Id&quot;:147,&quot;Name&quot;:&quot;Willingboro Township&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:4,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:148,&quot;Name&quot;:&quot;Albemarle&quot;},{&quot;Id&quot;:149,&quot;Name&quot;:&quot;Apex&quot;},{&quot;Id&quot;:150,&quot;Name&quot;:&quot;Asheboro&quot;},{&quot;Id&quot;:151,&quot;Name&quot;:&quot;Asheville&quot;},{&quot;Id&quot;:152,&quot;Name&quot;:&quot;Boone&quot;},{&quot;Id&quot;:153,&quot;Name&quot;:&quot;Burlington&quot;},{&quot;Id&quot;:154,&quot;Name&quot;:&quot;Carrboro&quot;},{&quot;Id&quot;:155,&quot;Name&quot;:&quot;Cary&quot;},{&quot;Id&quot;:156,&quot;Name&quot;:&quot;Chapel Hill&quot;},{&quot;Id&quot;:157,&quot;Name&quot;:&quot;Charlotte&quot;},{&quot;Id&quot;:158,&quot;Name&quot;:&quot;Clayton&quot;},{&quot;Id&quot;:159,&quot;Name&quot;:&quot;Clemmons&quot;},{&quot;Id&quot;:160,&quot;Name&quot;:&quot;Concord&quot;},{&quot;Id&quot;:161,&quot;Name&quot;:&quot;Cornelius&quot;},{&quot;Id&quot;:162,&quot;Name&quot;:&quot;Durham&quot;},{&quot;Id&quot;:163,&quot;Name&quot;:&quot;Eden&quot;},{&quot;Id&quot;:164,&quot;Name&quot;:&quot;Elizabeth City&quot;},{&quot;Id&quot;:165,&quot;Name&quot;:&quot;Fayetteville&quot;},{&quot;Id&quot;:166,&quot;Name&quot;:&quot;Fuquay-Varina&quot;},{&quot;Id&quot;:167,&quot;Name&quot;:&quot;Garner&quot;},{&quot;Id&quot;:168,&quot;Name&quot;:&quot;Gastonia&quot;},{&quot;Id&quot;:169,&quot;Name&quot;:&quot;Goldsboro&quot;},{&quot;Id&quot;:170,&quot;Name&quot;:&quot;Graham&quot;},{&quot;Id&quot;:171,&quot;Name&quot;:&quot;Greensboro&quot;},{&quot;Id&quot;:172,&quot;Name&quot;:&quot;Greenville&quot;},{&quot;Id&quot;:173,&quot;Name&quot;:&quot;Harrisburg&quot;},{&quot;Id&quot;:174,&quot;Name&quot;:&quot;Havelock&quot;},{&quot;Id&quot;:175,&quot;Name&quot;:&quot;Henderson&quot;},{&quot;Id&quot;:176,&quot;Name&quot;:&quot;Hickory&quot;},{&quot;Id&quot;:177,&quot;Name&quot;:&quot;High Point&quot;},{&quot;Id&quot;:178,&quot;Name&quot;:&quot;Holly Springs&quot;},{&quot;Id&quot;:179,&quot;Name&quot;:&quot;Hope Mills&quot;},{&quot;Id&quot;:180,&quot;Name&quot;:&quot;Huntersville&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:5,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:181,&quot;Name&quot;:&quot;Allentown&quot;},{&quot;Id&quot;:182,&quot;Name&quot;:&quot;Allison Park&quot;},{&quot;Id&quot;:183,&quot;Name&quot;:&quot;Altoona&quot;},{&quot;Id&quot;:184,&quot;Name&quot;:&quot;Baldwin&quot;},{&quot;Id&quot;:185,&quot;Name&quot;:&quot;Bethel Park&quot;},{&quot;Id&quot;:186,&quot;Name&quot;:&quot;Bethlehem&quot;},{&quot;Id&quot;:187,&quot;Name&quot;:&quot;Carlisle&quot;},{&quot;Id&quot;:188,&quot;Name&quot;:&quot;Chambersburg&quot;},{&quot;Id&quot;:189,&quot;Name&quot;:&quot;Chester&quot;},{&quot;Id&quot;:190,&quot;Name&quot;:&quot;Drexel Hill&quot;},{&quot;Id&quot;:191,&quot;Name&quot;:&quot;Easton&quot;},{&quot;Id&quot;:192,&quot;Name&quot;:&quot;Erie&quot;},{&quot;Id&quot;:193,&quot;Name&quot;:&quot;Fullerton&quot;},{&quot;Id&quot;:194,&quot;Name&quot;:&quot;Greensburg&quot;},{&quot;Id&quot;:195,&quot;Name&quot;:&quot;Hanover&quot;},{&quot;Id&quot;:196,&quot;Name&quot;:&quot;Harrisburg&quot;},{&quot;Id&quot;:197,&quot;Name&quot;:&quot;Hazleton&quot;},{&quot;Id&quot;:198,&quot;Name&quot;:&quot;Hermitage&quot;},{&quot;Id&quot;:199,&quot;Name&quot;:&quot;Horsham&quot;},{&quot;Id&quot;:200,&quot;Name&quot;:&quot;Johnstown&quot;},{&quot;Id&quot;:201,&quot;Name&quot;:&quot;King of Prussia&quot;},{&quot;Id&quot;:202,&quot;Name&quot;:&quot;Lancaster&quot;},{&quot;Id&quot;:203,&quot;Name&quot;:&quot;Lansdale&quot;},{&quot;Id&quot;:204,&quot;Name&quot;:&quot;Lebanon&quot;},{&quot;Id&quot;:205,&quot;Name&quot;:&quot;Levittown&quot;},{&quot;Id&quot;:206,&quot;Name&quot;:&quot;McKeesport&quot;},{&quot;Id&quot;:207,&quot;Name&quot;:&quot;Monroeville&quot;},{&quot;Id&quot;:208,&quot;Name&quot;:&quot;Mount Lebanon&quot;},{&quot;Id&quot;:209,&quot;Name&quot;:&quot;Murrysville&quot;},{&quot;Id&quot;:210,&quot;Name&quot;:&quot;New Castle&quot;},{&quot;Id&quot;:211,&quot;Name&quot;:&quot;Norristown&quot;},{&quot;Id&quot;:212,&quot;Name&quot;:&quot;Penn Hills&quot;},{&quot;Id&quot;:213,&quot;Name&quot;:&quot;Philadelphia&quot;},{&quot;Id&quot;:214,&quot;Name&quot;:&quot;Phoenixville&quot;},{&quot;Id&quot;:215,&quot;Name&quot;:&quot;Pittsburgh&quot;},{&quot;Id&quot;:216,&quot;Name&quot;:&quot;Plum&quot;},{&quot;Id&quot;:217,&quot;Name&quot;:&quot;Pottstown&quot;},{&quot;Id&quot;:218,&quot;Name&quot;:&quot;Radnor Township&quot;},{&quot;Id&quot;:219,&quot;Name&quot;:&quot;Reading&quot;},{&quot;Id&quot;:220,&quot;Name&quot;:&quot;Scott Township&quot;},{&quot;Id&quot;:221,&quot;Name&quot;:&quot;Scranton&quot;},{&quot;Id&quot;:222,&quot;Name&quot;:&quot;Sharon&quot;},{&quot;Id&quot;:223,&quot;Name&quot;:&quot;Springfield Township&quot;},{&quot;Id&quot;:224,&quot;Name&quot;:&quot;State College&quot;},{&quot;Id&quot;:225,&quot;Name&quot;:&quot;Upper St. Clair&quot;},{&quot;Id&quot;:226,&quot;Name&quot;:&quot;West Chester&quot;},{&quot;Id&quot;:227,&quot;Name&quot;:&quot;West Mifflin&quot;},{&quot;Id&quot;:228,&quot;Name&quot;:&quot;West Norriton&quot;},{&quot;Id&quot;:229,&quot;Name&quot;:&quot;Wilkes-Barre&quot;},{&quot;Id&quot;:230,&quot;Name&quot;:&quot;Wilkinsburg&quot;},{&quot;Id&quot;:231,&quot;Name&quot;:&quot;Williamsport&quot;},{&quot;Id&quot;:232,&quot;Name&quot;:&quot;Willow Grove&quot;},{&quot;Id&quot;:233,&quot;Name&quot;:&quot;York&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:6,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:234,&quot;Name&quot;:&quot;Alexandria&quot;},{&quot;Id&quot;:235,&quot;Name&quot;:&quot;Annandale&quot;},{&quot;Id&quot;:236,&quot;Name&quot;:&quot;Arlington&quot;},{&quot;Id&quot;:237,&quot;Name&quot;:&quot;Ashburn&quot;},{&quot;Id&quot;:238,&quot;Name&quot;:&quot;Bailey\u0027s Crossroads&quot;},{&quot;Id&quot;:239,&quot;Name&quot;:&quot;Blacksburg&quot;},{&quot;Id&quot;:240,&quot;Name&quot;:&quot;Burke&quot;},{&quot;Id&quot;:241,&quot;Name&quot;:&quot;Cave Spring&quot;},{&quot;Id&quot;:242,&quot;Name&quot;:&quot;Centreville&quot;},{&quot;Id&quot;:243,&quot;Name&quot;:&quot;Chantilly&quot;},{&quot;Id&quot;:244,&quot;Name&quot;:&quot;Charlottesville&quot;},{&quot;Id&quot;:245,&quot;Name&quot;:&quot;Chesapeake&quot;},{&quot;Id&quot;:246,&quot;Name&quot;:&quot;Chester&quot;},{&quot;Id&quot;:247,&quot;Name&quot;:&quot;Christiansburg&quot;},{&quot;Id&quot;:248,&quot;Name&quot;:&quot;Dale City&quot;},{&quot;Id&quot;:249,&quot;Name&quot;:&quot;Danville&quot;},{&quot;Id&quot;:250,&quot;Name&quot;:&quot;Fairfax&quot;},{&quot;Id&quot;:251,&quot;Name&quot;:&quot;Fair Oaks&quot;},{&quot;Id&quot;:252,&quot;Name&quot;:&quot;Fredericksburg&quot;},{&quot;Id&quot;:253,&quot;Name&quot;:&quot;Hampton&quot;},{&quot;Id&quot;:254,&quot;Name&quot;:&quot;Harrisonburg&quot;},{&quot;Id&quot;:255,&quot;Name&quot;:&quot;Herndon&quot;},{&quot;Id&quot;:256,&quot;Name&quot;:&quot;Hopewell&quot;},{&quot;Id&quot;:257,&quot;Name&quot;:&quot;Lake Ridge&quot;},{&quot;Id&quot;:258,&quot;Name&quot;:&quot;Leesburg&quot;},{&quot;Id&quot;:259,&quot;Name&quot;:&quot;Lincolnia&quot;},{&quot;Id&quot;:260,&quot;Name&quot;:&quot;Linton Hall&quot;},{&quot;Id&quot;:261,&quot;Name&quot;:&quot;Lynchburg&quot;},{&quot;Id&quot;:262,&quot;Name&quot;:&quot;Manassas&quot;},{&quot;Id&quot;:263,&quot;Name&quot;:&quot;Marumsco&quot;},{&quot;Id&quot;:264,&quot;Name&quot;:&quot;McLean&quot;},{&quot;Id&quot;:265,&quot;Name&quot;:&quot;Mechanicsville&quot;},{&quot;Id&quot;:266,&quot;Name&quot;:&quot;Newport News&quot;},{&quot;Id&quot;:267,&quot;Name&quot;:&quot;Norfolk&quot;},{&quot;Id&quot;:268,&quot;Name&quot;:&quot;Oakton&quot;},{&quot;Id&quot;:269,&quot;Name&quot;:&quot;Petersburg&quot;},{&quot;Id&quot;:270,&quot;Name&quot;:&quot;Portsmouth&quot;},{&quot;Id&quot;:271,&quot;Name&quot;:&quot;Reston&quot;},{&quot;Id&quot;:272,&quot;Name&quot;:&quot;Richmond&quot;},{&quot;Id&quot;:273,&quot;Name&quot;:&quot;Roanoke&quot;},{&quot;Id&quot;:274,&quot;Name&quot;:&quot;Rose Hill&quot;},{&quot;Id&quot;:275,&quot;Name&quot;:&quot;Salem&quot;},{&quot;Id&quot;:276,&quot;Name&quot;:&quot;Short Pump&quot;},{&quot;Id&quot;:277,&quot;Name&quot;:&quot;South Riding&quot;},{&quot;Id&quot;:278,&quot;Name&quot;:&quot;Springfield&quot;},{&quot;Id&quot;:279,&quot;Name&quot;:&quot;Staunton&quot;},{&quot;Id&quot;:280,&quot;Name&quot;:&quot;Sterling&quot;},{&quot;Id&quot;:281,&quot;Name&quot;:&quot;Suffolk&quot;},{&quot;Id&quot;:282,&quot;Name&quot;:&quot;Tuckahoe&quot;},{&quot;Id&quot;:283,&quot;Name&quot;:&quot;Tysons Corner&quot;},{&quot;Id&quot;:284,&quot;Name&quot;:&quot;Virginia Beach&quot;},{&quot;Id&quot;:285,&quot;Name&quot;:&quot;Waynesboro&quot;},{&quot;Id&quot;:286,&quot;Name&quot;:&quot;West Falls Church&nbsp;(Jefferson)&quot;},{&quot;Id&quot;:287,&quot;Name&quot;:&quot;West Springfield&quot;},{&quot;Id&quot;:288,&quot;Name&quot;:&quot;Winchester&quot;},{&quot;Id&quot;:289,&quot;Name&quot;:&quot;Woodlawn&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null},{&quot;stateId&quot;:7,&quot;Municipalities&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Municipality&quot;},{&quot;Id&quot;:290,&quot;Name&quot;:&quot;Beckley&quot;},{&quot;Id&quot;:291,&quot;Name&quot;:&quot;Bluefield&quot;},{&quot;Id&quot;:292,&quot;Name&quot;:&quot;Charleston&quot;},{&quot;Id&quot;:293,&quot;Name&quot;:&quot;Clarksburg&quot;},{&quot;Id&quot;:294,&quot;Name&quot;:&quot;Fairmont&quot;},{&quot;Id&quot;:295,&quot;Name&quot;:&quot;Huntington&quot;},{&quot;Id&quot;:296,&quot;Name&quot;:&quot;Martinsburg&quot;},{&quot;Id&quot;:297,&quot;Name&quot;:&quot;Morgantown&quot;},{&quot;Id&quot;:298,&quot;Name&quot;:&quot;Parkersburg&quot;},{&quot;Id&quot;:299,&quot;Name&quot;:&quot;South Charleston&quot;},{&quot;Id&quot;:300,&quot;Name&quot;:&quot;St. Albans&quot;},{&quot;Id&quot;:301,&quot;Name&quot;:&quot;Teays Valley&quot;},{&quot;Id&quot;:302,&quot;Name&quot;:&quot;Vienna&quot;},{&quot;Id&quot;:303,&quot;Name&quot;:&quot;Weirton&quot;},{&quot;Id&quot;:304,&quot;Name&quot;:&quot;Wheeling&quot;}],&quot;Pincodes&quot;:[{&quot;Id&quot;:0,&quot;Name&quot;:&quot;Select Pincode&quot;}],&quot;Id&quot;:0,&quot;Name&quot;:null}]"><input data-val="true" data-val-required="The CanShowAdditionalFields field is required." id="CanShowAdditionalFields" name="CanShowAdditionalFields" type="hidden" value="False"><input data-val="true" data-val-number="The field ApplicationTypeId must be a number." id="ApplicationTypeId" name="ApplicationTypeId" type="hidden" value="0"><input data-val="true" data-val-required="The isGratis field is required." id="isGratis" name="isGratis" type="hidden" value="False">        <div class="frm-element-div">
+    <div class="frm-label">
+        <label for="PassportNumber">Passport Number</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+
+        <input class="form-control small-input_field input_capital" data-val="true" data-val-length="Max 15 characters permitted." data-val-length-max="15" data-val-regex="Please use only letters and numbers" data-val-regex-pattern="^[0-9a-zA-Z ]+$" data-val-required="Required" id="PassportNumber" name="PassportNumber" placeholder="Passport Number" type="text" value="">
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="PassportNumber" data-valmsg-replace="true"></span>
+    </div>
+</div>
+    <div class="frm-element-div">
+        <div class="frm-label">
+            <label for="DateOfBirth">Date Of Birth (DD/MM/YYYY)</label><span class="mandatory">*</span>
+        </div>
+        <div class="frm-element">
+            <input class="form-control small-input_field auto-format-date" data-val="true" data-val-regex="Date should be in DD/MM/YYYY format" data-val-regex-pattern="^(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/]\d{4}$" data-val-required="Required" id="DateOfBirth" name="DateOfBirth" placeholder="DD/MM/YYYY" type="text" value="">
+            <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="DateOfBirth" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+<div class="frm-element-div">
+    <div class="frm-label">
+        <label for="PassportExpiryDate">Passport Expiry Date</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+
+        <input class="form-control small-input_field auto-format-date" data-val="true" data-val-regex="Date should be in DD/MM/YYYY format" data-val-regex-pattern="^(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/]\d{4}$" data-val-required="Required" id="PassportExpiryDate" name="PassportExpiryDate" placeholder="DD/MM/YYYY" type="text" value="">
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="PassportExpiryDate" data-valmsg-replace="true"></span>
+    </div>
+</div>
+<div class="frm-element-div">
+    <div class="frm-label">
+        <label for="NationalityId">Select Nationality</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+
+        
+        <select class="select_box" data-val="true" data-val-number="The field Select Nationality must be a number." data-val-required="Required" id="NationalityId" name="NationalityId" placeholder="Select Nationality"><option value="">Select Nationality</option>
+<option value="1">AFGHANISTAN</option>
+<option value="2">ALBANIA</option>
+<option value="161">ALGERIA</option>
+<option value="219">AMERICAN SAMOA</option>
+<option value="3">ANDORRA</option>
+<option value="220">ANGOLA</option>
+<option value="4">ANGUILLA</option>
+<option value="5">ANTIGUA AND BARBUDA</option>
+<option value="6">ARGENTINA</option>
+<option value="7">ARMENIA</option>
+<option value="8">AUSTRIA</option>
+<option value="174">AZERBAIJAN</option>
+<option value="9">BAHAMAS</option>
+<option value="175">BAHRAIN</option>
+<option value="176">BANGLADESH</option>
+<option value="10">BARBADOS</option>
+<option value="11">BELARUS</option>
+<option value="12">BELGIUM</option>
+<option value="13">BELIZE</option>
+<option value="14">BENIN</option>
+<option value="15">BERMUDA</option>
+<option value="177">BHUTAN</option>
+<option value="178">BOLIVIA</option>
+<option value="16">BOSNIA AND HERZEGOVINA</option>
+<option value="17">BOTSWANA</option>
+<option value="221">BRAZIL
+</option>
+<option value="18">BRITISH VIRGIN ISLANDS</option>
+<option value="19">BRUNEI DARUSSALAM</option>
+<option value="20">BULGARIA</option>
+<option value="21">BURKINA FASO</option>
+<option value="22">BURUNDI</option>
+<option value="23">CAMBODIA</option>
+<option value="24">CAMEROON</option>
+<option value="222">CANADA
+</option>
+<option value="25">CAPE VERDE</option>
+<option value="179">CAYMAN ISLANDS</option>
+<option value="26">CENTRAL AFRICAN REPUBLIC</option>
+<option value="27">CHAD</option>
+<option value="28">CHILE</option>
+<option value="165">CHINA</option>
+<option value="197">COLOMBIA</option>
+<option value="29">COMOROS</option>
+<option value="30">CONGO</option>
+<option value="31">CONGO, DEMOCRATIC REPUBLIC OF</option>
+<option value="32">COSTA RICA</option>
+<option value="33">COTE D IVOIRE</option>
+<option value="34">CROATIA</option>
+<option value="35">CUBA</option>
+<option value="36">CYPRUS</option>
+<option value="223">CYPRUS, NORTHERN</option>
+<option value="37">CZECH REPUBLIC</option>
+<option value="38">CZECHOSLOVAKIA</option>
+<option value="39">DENMARK</option>
+<option value="40">DJIBOUTI</option>
+<option value="41">DOMINICA</option>
+<option value="224">DOMINICAN REPUBLIC
+
+</option>
+<option value="42">EAST TIMOR DEM REPUBLIC</option>
+<option value="43">ECUADOR</option>
+<option value="171">EGYPT</option>
+<option value="44">EL SALVADOR</option>
+<option value="45">EQUATORIAL GUINEA</option>
+<option value="46">ERITREA</option>
+<option value="47">ESTONIA</option>
+<option value="48">ETHIOPIA</option>
+<option value="225">FALKLAND ISLANDS
+
+
+</option>
+<option value="180">FIJI</option>
+<option value="49">FINLAND</option>
+<option value="50">FRANCE</option>
+<option value="226">FRENCH POLYNESIA</option>
+<option value="51">GABON</option>
+<option value="52">GAMBIA</option>
+<option value="181">GEORGIA</option>
+<option value="53">GERMANY</option>
+<option value="182">GHANA</option>
+<option value="54">GIBRALTAR</option>
+<option value="55">GREECE</option>
+<option value="56">GRENADA</option>
+<option value="227">GUAM</option>
+<option value="57">GUATEMALA</option>
+<option value="58">GUINEA</option>
+<option value="59">GUINEA-BISSAU</option>
+<option value="60">GUYANA</option>
+<option value="228">HAITI</option>
+<option value="61">HONDURAS</option>
+<option value="62">HONG KONG</option>
+<option value="63">HUNGARY</option>
+<option value="64">ICELAND</option>
+<option value="163">INDIA</option>
+<option value="166">INDONESIA</option>
+<option value="65">IRAN</option>
+<option value="66">IRAQ</option>
+<option value="67">IRELAND</option>
+<option value="68">ISRAEL</option>
+<option value="69">ITALY</option>
+<option value="183">IVORY COAST</option>
+<option value="70">JAMAICA</option>
+<option value="184">JAPAN</option>
+<option value="185">JORDAN</option>
+<option value="186">KAZAKSTAN</option>
+<option value="71">KENYA</option>
+<option value="72">KIRIBATI</option>
+<option value="229">KOREA, REPUBLIC OF</option>
+<option value="230">KOSOVO</option>
+<option value="187">KUWAIT</option>
+<option value="76">KYRGYZSTAN</option>
+<option value="77">LAOS</option>
+<option value="78">LATVIA</option>
+<option value="173">LEBANON</option>
+<option value="79">LESOTHO</option>
+<option value="80">LIBERIA</option>
+<option value="188">LIBYA</option>
+<option value="81">LIECHTENSTEIN</option>
+<option value="82">LITHUANIA</option>
+<option value="83">LUXEMBOURG</option>
+<option value="189">MACAU</option>
+<option value="84">MACEDONIA</option>
+<option value="85">MADAGASCAR</option>
+<option value="190">MALAWI</option>
+<option value="191">MALAYSIA</option>
+<option value="86">MALDIVES</option>
+<option value="87">MALI</option>
+<option value="88">MALTA</option>
+<option value="89">MARSHALL ISLANDS</option>
+<option value="90">MAURITANIA</option>
+<option value="91">MAURITIUS</option>
+<option value="92">MEXICO</option>
+<option value="93">MICRONESIA</option>
+<option value="231">MICRONESIA, FEDERATED STATES OF</option>
+<option value="216">MOLDAVIA</option>
+<option value="94">MOLDOVA</option>
+<option value="95">MONACO</option>
+<option value="96">MONGOLIA</option>
+<option value="192">MONTENEGRO</option>
+<option value="193">MONTSERRAT</option>
+<option value="194">MOROCCO</option>
+<option value="97">MOZAMBIQUE</option>
+<option value="98">MYANMAR</option>
+<option value="99">NAMIBIA</option>
+<option value="100">NAURU</option>
+<option value="195">NEPAL</option>
+<option value="247">NETHERLANDS, KINGDOM OF THE</option>
+<option value="246">NEW CALEDONIA</option>
+<option value="101">NEW ZEALAND</option>
+<option value="102">NICARAGUA</option>
+<option value="103">NIGER</option>
+<option value="104">NIGERIA</option>
+<option value="105">NORWAY</option>
+<option value="196">OMAN</option>
+<option value="169">PAKISTAN</option>
+<option value="106">PALAU</option>
+<option value="244">PALESTINE</option>
+<option value="107">PALESTNIAN TERRITORY, OCCUPIED</option>
+<option value="108">PANAMA</option>
+<option value="109">PAPUA NEW GUINEA</option>
+<option value="110">PARAGUAY</option>
+<option value="111">PERU</option>
+<option value="167">PHILIPPINES</option>
+<option value="243">PITCAIRN ISLANDS</option>
+<option value="112">POLAND</option>
+<option value="113">PORTUGAL</option>
+<option value="114">QATAR</option>
+<option value="198">REPUBLIC OF BURUNDI</option>
+<option value="199">REPUBLIC OF KIRIBATII</option>
+<option value="74">REPUBLIC OF KOREA</option>
+<option value="75">REPUBLIC OF KOSOVO</option>
+<option value="130">REPUBLIC OF SLOVENIA</option>
+<option value="117">ROMANIA</option>
+<option value="118">RUSSIAN FEDERATION</option>
+<option value="119">RWANDA</option>
+<option value="242">SAHRAWI ARAB DEMOCRATIC REPUBLIC</option>
+<option value="241">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="120">SAINT KITTS AND NEVIS</option>
+<option value="121">SAINT LUCIA</option>
+<option value="122">SAINT VINCENT AND THE GRENADIN</option>
+<option value="123">SAMOA</option>
+<option value="124">SAN MARINO</option>
+<option value="125">SAO TOME AND PRINCIPE</option>
+<option value="202">SAUDI ARABIA</option>
+<option value="168">SENEGAL</option>
+<option value="240">SERBIA</option>
+<option value="127">SEYCHELLES</option>
+<option value="128">SIERRA LEONE</option>
+<option value="203">SINGAPORE</option>
+<option value="129">SLOVAKIA</option>
+<option value="239">SLOVENIA</option>
+<option value="131">SOLOMON ISLANDS</option>
+<option value="132">SOMALIA</option>
+<option value="162">SOUTH AFRICA</option>
+<option value="133">SOUTH SUDAN</option>
+<option value="134">SPAIN</option>
+<option value="170">SRI LANKA</option>
+<option value="205">ST. LUCIA</option>
+<option value="206">ST. VINCENT &amp; THE GRENADINES</option>
+<option value="238">SUDAN</option>
+<option value="135">SUDAN</option>
+<option value="136">SURINAME</option>
+<option value="137">SWAZILAND</option>
+<option value="138">SWEDEN</option>
+<option value="139">SWITZERLAND</option>
+<option value="215">SYRIA</option>
+<option value="140">TAIWAN</option>
+<option value="141">TAJIKISTAN</option>
+<option value="142">TANZANIA</option>
+<option value="237">THAILAND</option>
+<option value="236">THE COOK ISLANDS</option>
+<option value="144">THE SOVIET UNION</option>
+<option value="208">TIBET</option>
+<option value="235">TIMOR-LESTE (EAST TIMOR)</option>
+<option value="145">TOGO</option>
+<option value="234">TOKELAU</option>
+<option value="146">TONGA</option>
+<option value="147">TRINIDAD AND TOBAGO</option>
+<option value="209">TUNISIA</option>
+<option value="160">TURKEY</option>
+<option value="148">TURKMENISTAN</option>
+<option value="210">TURKS AND CAICOS ISLANDS</option>
+<option value="149">TUVALU</option>
+<option value="150">UGANDA</option>
+<option value="211">UKRAINE</option>
+<option value="151">UNITED ARAB EMIRATES</option>
+<option value="217">UNITED KINGDOM</option>
+<option value="233">UNITED STATES OF AMERICA</option>
+<option value="232">UNITED STATES VIRGIN ISLANDS</option>
+<option value="153">URUGUAY</option>
+<option value="212">UZBEKISTAN</option>
+<option value="154">VANUATU</option>
+<option value="155">VATICAN CITY</option>
+<option value="156">VENEZUELA</option>
+<option value="213">VIETNAM</option>
+<option value="157">YEMEN</option>
+<option value="158">ZAMBIA</option>
+<option value="159">ZIMBABWE</option>
+</select>
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="NationalityId" data-valmsg-replace="true"></span>
+    </div>
+</div>
+<div class="frm-element-div">
+    <div class="frm-label">
+        <label for="FirstName">First Name</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+        <input class="form-control small-input_field input_capital" data-val="true" data-val-length="Max. 50 charracters permitted." data-val-length-max="50" data-val-regex="Please use only Characters" data-val-regex-pattern="^[a-zA-Z'_\- ]+$" data-val-required="Required" id="FirstName" name="FirstName" placeholder="As appears in passport" type="text" value="HASSENE">
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+    </div>
+</div>
+<div class="frm-element-div">
+    <div class="frm-label">
+        <label for="LastName">Last Name</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+
+        <input class="form-control small-input_field input_capital" data-val="true" data-val-length="Max. 50 charracters permitted." data-val-length-max="50" data-val-regex="Please use only Characters" data-val-regex-pattern="^[a-zA-Z'_\- ]+$" data-val-required="Required" id="LastName" name="LastName" placeholder="As appears in passport" type="text" value="ZEMMOURI ">
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+    </div>
+</div>
+<div class="frm-element-div">
+    <div class="frm-label">
+        <label for="GenderId">Gender</label><span class="mandatory">*</span>
+    </div>
+    <div class="frm-element">
+
+        <select class="select_box" data-val="true" data-val-number="The field Gender must be a number." data-val-range="Required" data-val-range-max="2147483647" data-val-range-min="1" data-val-required="Required" id="GenderId" name="GenderId" placeholder="Male/Female/Other"><option selected="selected" value="0">Select Gender</option>
+<option value="2">Female</option>
+<option value="1">Male</option>
+<option value="3">Others</option>
+</select>
+        <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="GenderId" data-valmsg-replace="true"></span>
+        <input id="GenderId" name="GenderId" type="hidden" value="0">
+    </div>
+</div>
+    <div class="frm-element-div">
+        <div class="frm-label">
+            <label for="Mobile">Contact Number</label>
+            <span class="mandatory">*</span>
+        </div>
+        <div class="frm-element">
+            
+
+            <input class="form-control phcode-input_field" data-val="true" data-val-regex="Enter valid dial code" data-val-regex-pattern="^([+]?[0-9]*)\d$" data-val-required="Required" id="DialCode" maxlength="10" name="DialCode" placeholder="+213" readonly="readonly" style="width:70px;float:left;margin-right: 5px;" type="text" value="+213">
+
+            <input title="Do not add ‘0’ before mobile number" autocomplete="off" class="form-control small-input_field" data-val="true" data-val-length="Contact number max 9 min 6 numbers permitted" data-val-length-max="9" data-val-length-min="6" data-val-regex="Use numerics only please : Numbers should be in the range from 6-15 digits" data-val-regex-pattern="^\d+$" data-val-required="Required" id="Mobile" maxlength="9" name="Mobile" placeholder="Mobile or Landline No." readonly="readonly" style="width:180px;margin-top:0px;" type="text" value="666919703">
+            <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
+           
+        </div>
+    </div>
+    <div class="frm-element-div">
+        <div class="frm-label">
+            <label for="EmailId">Email ID</label><span class="mandatory">*</span>
+        </div>
+        <div class="frm-element">
+
+            <input class="form-control small-input_field" data-val="true" data-val-length="Max. 50 charracters permitted." data-val-length-max="255" data-val-regex="Enter valid email address" data-val-regex-pattern="^[a-zA-Z0-9_\.-]+@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,15}$" data-val-required="Required" id="validateEmailId" name="EmailId" placeholder="Enter Email Id" readonly="readonly" type="text" value="zemmourihassene5@gmail.com">
+            <div class="clearfix"></div><span class="field-validation-valid" data-valmsg-for="EmailId" data-valmsg-replace="true"></span>
+            <span id="ErrMsg"></span>
+        </div>
+    </div>
+<div class="frm-button">
+    <a class="submitbtn" id="btnBack" href="/Global-Appointment/Applicant/ApplicantList">Back</a>
+    <input type="reset" value="Reset" class="submitbtn" style="background:#676767;">
+
+    <input type="submit" id="submitbuttonId" value="Submit" class="submitbtn">
+</div>
+</form>
