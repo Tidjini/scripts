@@ -6,7 +6,9 @@ def load_env():
     config_file_path = f'.env.{config_file}'
     config.read_dotenv(config_file_path)
 
-
-
-if __name__ == "__main__":
-    load_env()
+def use_env_var(config, *keys):
+    # Use the environment variables
+    # env['DB_NAME'] = config('DB_NAME')
+    env = {}
+    for key in keys:
+        env[key] = config(key)
