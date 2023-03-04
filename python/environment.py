@@ -12,3 +12,6 @@ def use_env_var(config, *keys):
     env = {}
     for key in keys:
         env[key] = config(key)
+
+# Unload the environment variables to avoid conflicts
+config.unload_dotenv()
