@@ -30,7 +30,6 @@ select_result = models.Event.objects.filter(
 # this selection give selected fields, plus id
 select_result_with_id = models.Event.objects.filter(
     authorize=True, confirm=True).only('name', 'details')
-# todo Subquery review with example
 
 # field equals to other field
 users = models.Users.objects.filter(first_name=F('last_name'))
@@ -45,3 +44,12 @@ second_user = users.order_by('-last_login')[1]
 # 3/get duplicates by filtering results
 users = models.User.objects.values('first_name').annotate(
     name_count=Count('first_name')).filter(name_count__gt=1)
+
+# Select random
+user = models.User.objects.order_by('?').first()
+# for more efficient way use random
+pk = random.randint(1, max_id)
+user = models.User.objects.get(pk=pk)
+
+# todo Subquery review with example page 12
+# todo review distinct page 17
