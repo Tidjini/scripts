@@ -53,3 +53,4 @@ user = models.User.objects.get(pk=pk)
 
 # todo Subquery review with example page 12
 # todo review distinct page 17
+# todo review levenstien function : Func, F , function, template
