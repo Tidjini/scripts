@@ -17,3 +17,7 @@ and_result = models.Event.objects.filter(authorize=True, confirm=True)
 
 # Not operator
 not_authorized = models.Event.objects.filter(~Q(authorize=True))
+
+# UNION
+# Union can be performed on differents models, but they must have same fields with same datatypes
+authorized_event.union(confirmed_event)
