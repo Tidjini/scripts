@@ -30,3 +30,9 @@ select_result = models.Event.objects.filter(
 # this selection give selected fields, plus id
 select_result_with_id = models.Event.objects.filter(
     authorize=True, confirm=True).only('name', 'details')
+# todo Subquery review with example
+
+# field equals to other field
+users = models.Users.objects.filter(first_name=F('last_name'))
+users = models.Users.objects.anontate(first=Substr(
+    "first_name", 1, 1), last=Substr("last_name", 1, 1)).filter(first=F('last'))
