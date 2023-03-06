@@ -36,3 +36,12 @@ select_result_with_id = models.Event.objects.filter(
 users = models.Users.objects.filter(first_name=F('last_name'))
 users = models.Users.objects.anontate(first=Substr(
     "first_name", 1, 1), last=Substr("last_name", 1, 1)).filter(first=F('last'))
+
+# Nth results with slice operator
+second_user = users.order_by('-last_login')[1]
+# Duplicate names,
+# 1/select value first_name
+# 2/count names Count(first_name)
+# 3/get duplicates by filtering results
+users = models.User.objects.values('first_name').annotate(
+    name_count=Count('first_name')).filter(name_count__gt=1)
