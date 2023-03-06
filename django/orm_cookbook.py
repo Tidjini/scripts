@@ -7,6 +7,10 @@ print(str(queryset.query))
 # OR query
 authorized_event = models.Event.objects.filter(authorize=True)
 confirmed_event = models.Event.objects.filter(confirm=True)
-result = authorized_event | confirmed_event
+or_result = authorized_event | confirmed_event
 # OR with filter Q
-result = models.Event.objects.filter(Q(authorize=True) | Q(confirm=True))
+or_result = models.Event.objects.filter(Q(authorize=True) | Q(confirm=True))
+# AND Query
+and_result = authorized_event & confirmed_event
+and_result = models.Event.objects.filter(Q(authorize=True) & Q(confirm=True))
+and_result = models.Event.objects.filter(authorize=True, confirm=True)
