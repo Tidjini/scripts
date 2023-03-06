@@ -21,3 +21,12 @@ not_authorized = models.Event.objects.filter(~Q(authorize=True))
 # UNION
 # Union can be performed on differents models, but they must have same fields with same datatypes
 authorized_event.union(confirmed_event)
+
+# SELECT Some fields
+select_result = models.Event.objects.filter(
+    authorize=True, confirm=True).values('name', 'details')
+select_result = models.Event.objects.filter(
+    authorize=True, confirm=True).values_list('name', 'details')
+# this selection give selected fields, plus id
+select_result_with_id = models.Event.objects.filter(
+    authorize=True, confirm=True).only('name', 'details')
