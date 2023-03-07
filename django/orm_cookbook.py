@@ -52,5 +52,13 @@ pk = random.randint(1, max_id)
 user = models.User.objects.get(pk=pk)
 
 # todo Subquery review with example page 12
-# todo review distinct page 17
+# done review distinct page 17
+# distinct eliminate duplicate rows from the query result
+# On Posgtres Sql you can pass additionnal args *fields
 # todo review levenstien function : Func, F , function, template
+
+# values vs values_list
+# values return QuerySet that returns dictionnaries (*fields, **expressions)
+# values_list return QuerySet that returns tuples (*fields, flat=False, named=False),
+#   flat single value [(id), (id) ....] -> [id, id, id ...] with ne field
+#   named will return a namedTuple (Row data class )
