@@ -49,3 +49,6 @@ class Category(models.Model):
         with connection.cursor() as cursor:
             cursor.execute('TURNCATE TABLE "{0}" CASCADE'.format(
                 cls.__meta__.db_table))
+
+# signals for third party apps and models you can't control
+# otherwise use .save overiding
