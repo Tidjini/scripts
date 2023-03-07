@@ -40,3 +40,17 @@ class User(Model):
 
 # Try to convert Existing Database to Django Models
 # python manage.py inspectdb > models.py
+
+
+# Views and virtual tables (le vues)
+# but with this you can not insert data => django.db.utils.OperationalError
+class TempUser(models.Model):
+    first_name = models.CharField(max_length=100)
+
+    class Meta:
+        managed = False
+        db_table = 'temp_user'
+
+
+# null  => for database column value
+# blank => for form input in Admin and your Views
