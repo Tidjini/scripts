@@ -36,4 +36,16 @@ class Config(models.Model):
 Category.objects.filter(name="filter").update(count=F('count') + 1)
 
 # turncate
+# this is use DELETE FROM ... wich is slow
 Category.objects.all().delete()
+# instead define a turncate function in Category Model
+
+
+class Category(models.Model):
+    ...
+
+    @classmethod
+    def turncat(cls):
+        with connection.cursor() as cursor:
+            cursor.execute('TURNCATE TABLE "{0}" CASCADE'.format(
+                cls.__meta__.db_table))
