@@ -23,3 +23,16 @@ user1.save()
 # Remove Follower
 user1.follower.remove(user2)
 user1.save()
+
+# Self Referencing
+
+
+class User(Model):
+    manager = ForeignKey('self', on_delete=CASCADE)
+    pass
+
+
+# OR
+class User(Model):
+    manager = ForeignKey('app.Employee', on_delete=CASCADE)
+    pass
