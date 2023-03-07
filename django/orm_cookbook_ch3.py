@@ -9,3 +9,10 @@ Category.objects.bulk_create(
         Category(name="C"),
     ]
 )
+
+# clone object
+
+category = Category.objects.first()
+# should set pk to None
+category.pk = None
+category.save()
