@@ -16,3 +16,17 @@ category = Category.objects.first()
 # should set pk to None
 category.pk = None
 category.save()
+
+
+# create just one object in table
+# this is usefull in configurations tables
+class Config(models.Model):
+    name = models.CharField(max_length=255)
+
+    def save(self, *args, **kwargs):
+        # check existance
+        if self.__class__.objects.count():
+            # get PK if item exist
+            self.pk = self.__class__.objects.first().pk
+
+        super().save(*args, **kwargs)
