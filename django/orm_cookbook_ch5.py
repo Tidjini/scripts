@@ -54,3 +54,7 @@ class TempUser(models.Model):
 
 # null  => for database column value
 # blank => for form input in Admin and your Views
+# NullBooleanField
+
+# TODO UUIDField vs Id
+# Slugify in Slug Field django.utils.text import slugify
