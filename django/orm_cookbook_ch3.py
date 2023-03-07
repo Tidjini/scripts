@@ -30,3 +30,7 @@ class Config(models.Model):
             self.pk = self.__class__.objects.first().pk
 
         super().save(*args, **kwargs)
+
+
+# update field by it self
+Category.objects.filter(name="filter").update(count=F('count') + 1)
