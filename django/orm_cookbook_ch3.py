@@ -32,5 +32,8 @@ class Config(models.Model):
         super().save(*args, **kwargs)
 
 
-# update field by it self
+# update field by it self exp!count=F('count') + 1
 Category.objects.filter(name="filter").update(count=F('count') + 1)
+
+# turncate
+Category.objects.all().delete()
