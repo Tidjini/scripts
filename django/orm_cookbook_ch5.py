@@ -36,3 +36,7 @@ class User(Model):
 class User(Model):
     manager = ForeignKey('app.Employee', on_delete=CASCADE)
     pass
+
+
+# Try to convert Existing Database to Django Models
+# python manage.py inspectdb > models.py
